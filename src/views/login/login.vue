@@ -98,7 +98,6 @@ export default defineComponent({
         this.error.reg = '两次密码不一致'
         return
       }
-      debugger
       fetchReg({ email: mail, password: pass }).then(() => {
         this.$router.push('/chat/213')
       })
