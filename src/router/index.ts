@@ -32,15 +32,15 @@ const routes: RouteRecordRaw[] = [
     ],
   },
   {
-    path: '/test',
-    name: 'test1',
+    path: '/user',
+    name: 'user',
     // component: ChatLayout,
-    redirect: '/test',
+    redirect: '/user',
     children: [
       {
-        path: '/test',
-        name: 'test',
-        component: () => import('@/views/login/test.vue'),
+        path: '/user',
+        name: 'user',
+        component: () => import('@/views/user/user.vue'),
       },
     ],
   },
